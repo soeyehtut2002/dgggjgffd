@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FAQs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="FAQS.css">
+    <script>
+    $(document).ready(function () { 
+        $("#header").load("./header.html");
+        $("#footer").load("./footer.html");
+    });
+    </script>
+    
+</head>
+<body>
+  <header id="header"></header>
+    <header>
+        <h1>FAQs</h1>
+    </header>
+    <div class="container">
+        <div class="faq">
+            <div class="question">1. How do I sign up for a gym membership?</div>
+            <div class="answer">You can sign up for a gym membership by visiting our
+                 front desk during our operating hours. Our staff will be happy to assist you.</div>
+        </div>
+        <div class="faq">
+            <div class="question">2. What are your gym's operating hours?</div>
+            <div class="answer">We are open from 5:00 AM to 10:00 PM, Monday through Saturday,
+                 and from 7:00 AM to 8:00 PM on Sundays.</div>
+        </div>
+        <div class="faq">
+            <div class="question">3. Do you offer personal training sessions?</div>
+            <div class="answer">Yes, we offer personal training sessions with certified trainers.
+                 You can inquire about our personal training packages at the front desk.</div>
+        </div>
+        <!-- Add more FAQ items as needed -->
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll(".question");
+
+        questions.forEach(question => {
+            question.addEventListener("click", () => {
+                question.classList.toggle("active");
+                const answer = question.nextElementSibling;
+                if (question.classList.contains("active")) {
+                    answer.style.display = "block";
+                } else {
+                    answer.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+    
+
+<footer id="footer"></footer>
+</body>
+</html>

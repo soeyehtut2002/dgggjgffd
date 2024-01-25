@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dobu.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="MainContainer">
+    
+ <div class="Menu"  >
+    <div class="hader">
+        <div class="LogoContainer">
+            <img src="Photo/MainLogo.png" class="Logoimg">
+    </div>
+    <div class="Menucontainer">
+        <a href="" class="menuitem7">About US</a>
+        <div class="dropdown">
+            <button class="dropbtn">Service</button>
+            <div class="dropdown-content">
+            <a href="#">Classes</a>
+            <a href="#">Facilities</a>
+            <a href="#">Another</a>
+            </div>
+          </div>
+        <a href="Instructor.html"class="menuitem7">Instrctors</a>
+        <a href=""class="menuitem7">Schedule</a>
+        <a href=""class="menuitem7">Contact Us</a>
+        <a href=""class="menuitem7">Signin</a>
+    </div>
+    <div class="MobileMenuContainer">
+        <img src="data:image/png;base64,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" class="menuimg">
+         </div>
+    </div>
+</div>
+
+
+<!--landing page-->
+<div class="mainbody">
+<div class="container1">
+    <div class="left">
+      <div class="inner">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNAx4CNVEO6ZuXB4GEVw9Me6TSJA9xw-uRog&usqp=CAU" class="innerphoto">
+        <h1 class="titleHeader">
+            Build your base at Asia’s leading group class and personal
+        </h1>
+        <div class="description">
+          A simple way to text, video chat and plan things all in one place.
+        </div>
+        <input type="text" class="blockElement" placeholder="Email address or phone number" />
+        <input type="password" class="blockElement" placeholder="Password" />
+        <button class="blockElement myanmar">Sign in</button>
+        <div class="inputSpan">
+          <input type="checkbox" />
+          <span>Keep me signed in</span>
+        </div>
+        <div class="password">Forgotten your passwords?</div>
+        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yh/r/qwb2lwC2-Eg.png" class="appStoreImage" />
+      </div>
+    </div>
+    <div class="right">
+      <img src="https://images.unsplash.com/photo-1550259979-ed79b48d2a30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1968&q=80" class="rightImage" />
+    </div>
+  </div>
+</div>
+<!--landing page-->
+
+
+
+
+ 
+    <!--mentor page 1-->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            /* Add this CSS code for image overlay and fade-in effect */
+           
+        </style>
+    </head>
+    <body>
+        <h1 class="H1">Meet Our Team</h1>
+        <div class="m1">
+            <div class="c1">
+                <div class="l1 overlay-container">
+                    <div class="text-block">
+                        <h4>Ms.Anna</h4>
+                        <div class="PR"><p> Founder/CEO</p></div>
+                      </div>
+                    <a href="https://example.com/link1">
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" 
+                        class="Rimg" />
+                        <div class="overlay-text">Ms.Anna is the founder and CEO of BASE and host of the Fitness Business Asia podcast and Build Your Base show.<br> Ms. Anna is a Diploma of Personal Training qualification from the UK as well as certifications with Precision Nutrition (Level 1 Coach), Crossfit (Level 1 Coach), Spartan Race training and kettlebell training (IKSFA certified).
+                         
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="r1 overlay-container">
+                    <div class="text-block">
+                        <h4>Ms.Anna</h4>
+                        <div class="PR"><p> Founder/CEO</p></div>
+                      </div>
+                    <a href="https://example.com/link2">
+                        <img src="https://images.unsplash.com/photo-1611672585731-fa10603fb9e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" 
+                        class="Rimg" />
+                        <div class="overlay-text">Text for Image 2</div>
+                    </a>
+                </div>
+    
+                <div class="r2 overlay-container">
+                    <div class="text-block">
+                        <h4>Ms.Anna</h4>
+                        <div class="PR"><p> Founder/CEO</p></div>
+                      </div>
+                    <a href="https://example.com/link3">
+                        <img src="https://images.unsplash.com/photo-1579758682665-53a1a614eea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1887&q=80" 
+                        class="Rimg" />
+                        <div class="overlay-text">Text for Image 3</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    
+    <!--mentor page 1-->
+
+
+   <!--mentor page 2-->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            /* Add this CSS code for image overlay and fade-in effect */
+           
+        </style>
+    </head>
+    <body>
+        <div class="m1">
+            <div class="c1">
+                <div class="l1 overlay-container">
+                    <div class="text-block">
+                        <h4>Ms.Anna</h4>
+                        <div class="PR"><p> Founder/CEO</p></div>
+                      </div>
+                    <a href="https://example.com/link1">
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" 
+                        class="Rimg" />
+                        <div class="overlay-text">Ms.Anna is the founder and CEO of BASE and host of the Fitness Business Asia podcast and Build Your Base show.<br> Ms. Anna is a Diploma of Personal Training qualification from the UK as well as certifications with Precision Nutrition (Level 1 Coach), Crossfit (Level 1 Coach), Spartan Race training and kettlebell training (IKSFA certified).
+                         
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="r1 overlay-container">
+                    <div class="text-block">
+                        <h4>Ms.Anna</h4>
+                        <div class="PR"><p> Founder/CEO</p></div>
+                      </div>
+                    <a href="https://example.com/link2">
+                        <img src="https://images.unsplash.com/photo-1611672585731-fa10603fb9e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" 
+                        class="Rimg" />
+                        <div class="overlay-text">Text for Image 2</div>
+                    </a>
+                </div>
+    
+                <div class="r2 overlay-container">
+                    <div class="text-block">
+                        <h4>Ms.Anna</h4>
+                        <div class="PR"><p> Founder/CEO</p></div>
+                      </div>
+                    <a href="https://example.com/link3">
+                        <img src="https://images.unsplash.com/photo-1579758682665-53a1a614eea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1887&q=80" 
+                        class="Rimg" />
+                        <div class="overlay-text">Text for Image 3</div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="c1">
+                <div class="l1 overlay-container">
+                    <div class="text-block">
+                        <h4>Ms.Anna</h4>
+                        <div class="PR"><p> Founder/CEO</p></div>
+                      </div>
+                    <a href="https://example.com/link1">
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" 
+                        class="Rimg" />
+                        <div class="overlay-text">Ms.Anna is the founder and CEO of BASE and host of the Fitness Business Asia podcast and Build Your Base show.<br> Ms. Anna is a Diploma of Personal Training qualification from the UK as well as certifications with Precision Nutrition (Level 1 Coach), Crossfit (Level 1 Coach), Spartan Race training and kettlebell training (IKSFA certified).
+                         
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="r1 overlay-container">
+                    <div class="text-block">
+                        <h4>Ms.Anna</h4>
+                        <div class="PR"><p> Founder/CEO</p></div>
+                      </div>
+                    <a href="https://example.com/link2">
+                        <img src="https://images.unsplash.com/photo-1611672585731-fa10603fb9e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" 
+                        class="Rimg" />
+                        <div class="overlay-text">Text for Image 2</div>
+                    </a>
+                </div>
+    
+                <div class="r2 overlay-container">
+                    <div class="text-block">
+                        <h4>Ms.Anna</h4>
+                        <div class="PR"><p> Founder/CEO</p></div>
+                      </div>
+                    <a href="https://example.com/link3">
+                        <img src="https://images.unsplash.com/photo-1579758682665-53a1a614eea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1887&q=80" 
+                        class="Rimg" />
+                        <div class="overlay-text">Text for Image 3</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    
+   <!--mentor page 2-->
+
+
+
+   
+
+
+
+
+</div>
+</body>
+</html>

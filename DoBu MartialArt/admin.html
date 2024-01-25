@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Admin Panel</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="container">
+    <h1>No Money NO Honey</h1>
+    <button onclick="openMemberManagement()">Manage Members</button>
+    <button onclick="openScheduleManagement()">Manage Schedules</button>
+
+    <div id="memberManagement" class="management-panel" style="display: none;">
+        <h2>Member Management</h2>
+      
+       
+  
+      
+
+
+          
+          <!-- Form to edit a member -->
+          <form id="editMemberForm" style="display: none;">
+            <input type="hidden" id="editMemberId">
+            <label for="editMemberName">Name:</label>
+            <input type="text" id="editMemberName" required><br>
+          
+            <label for="editMembership">Membership Type:</label>
+            <input type="text" id="editMembership" required><br>
+          
+            <label for="editGender">Gender:</label>
+            <input type="text" id="editGender" required><br>
+          
+            <label for="editEmail">Email:</label>
+            <input type="email" id="editEmail" required><br>
+          
+            <label for="editArt">Art:</label>
+            <input type="text" id="editArt" required><br>
+          
+            <button type="button" onclick="submitEditedMember()">Save Changes</button>
+            <button id="closeButton" onclick="closeEditForm()">Close</button>
+          </form>
+          
+  
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Membership</th>
+              <th>Gender</th>
+              <th>Email</th>
+              <th>Art</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="memberTable"></tbody>
+        </table>
+        <button onclick="addMember()">Add Member</button>
+         <!-- Form to add a member -->
+         <form id="addMemberForm" class="horizontal-form">
+            <label for="memberName">Name:</label>
+            <input type="text" id="memberName" required><br>
+          
+            <label for="membership">Membership Type:</label>
+            <input type="text" id="membership" required><br>
+          
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" required><br>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+          
+            <label for="art">Art:</label>
+            <input type="text" id="art" required><br>
+          
+            <button type="button" onclick="submitMember()">Submit</button>
+            <button type="button" class="close-button" onclick="closeForm()">Close</button>
+          </form>
+
+      </div>
+
+    <div id="scheduleManagement" class="management-panel" style="display: none;">
+      <h2>Schedule Management</h2>
+      <button onclick="addSchedule()">Add Schedule</button>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Time</th>
+            <th>Day</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="scheduleTable"></tbody>
+      </table>
+    </div>
+    
+  </div>
+  
+
+
+  <script src="Test.js"></script>
+</body>
+</html>

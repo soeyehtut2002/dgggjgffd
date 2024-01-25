@@ -1,0 +1,255 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+
+}
+
+h1 {
+  color: #333;
+}
+
+/* Add your CSS styles here */
+
+/* Sticky NavBar */
+.MainContainer{
+   
+}
+
+.Menu{
+  background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust the z-index as needed */
+   
+}
+
+
+.menuitem7{
+    margin-left:20px;
+    font-size: 20px;
+    color: aquamarine;
+     text-decoration: none;
+     
+
+
+}
+
+.menuitem7:hover{
+    text-decoration: underline;
+}
+
+
+
+.hader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+
+
+}
+
+.Logocontainer{
+    width: 50px;
+    height: 50px;
+}
+
+.Logoimg{
+    width: 70px;
+ }
+ 
+.Menucontainer{
+    margin-top: 30px;
+    margin-right: 10px;
+
+
+}
+
+.MobileMenuContainer{
+    display: none;
+    
+}
+
+.menuimg{
+    width: 40px;
+}
+@media (max-width : 800px)  {
+    .Menucontainer{
+        display: none;
+    }
+    .MobileMenuContainer{
+        display: block;
+    }  
+}
+
+/* Sticky NavBar */
+
+
+/* footer  */
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  }
+  
+  footer{
+	background-color: #111;
+  }
+  
+  .footer-container{
+	width: 100%;
+	padding: 70px 30px 20px;
+  margin-top: 100px;
+  }
+  .social-Icon{
+	display: flex;
+	justify-content: center;
+  }
+  
+  .social-Icon a{
+	text-decoration: none ;
+	padding: 10px;
+	margin: 10px;
+	background-color: aliceblue;
+	border-radius: 50%;
+  
+  }
+  
+  .social-Icon a i{
+	 font-size: 2em;
+	 color: black;
+	 opacity: 0.9;
+  }
+  /*Hover effect on social media icon*/
+  .social-Icon a:hover{
+	background-color:#111 ;
+	transition: 0.5s;
+  
+  }
+  
+  .social-Icon a:hover i{
+	color: white;
+	transition: 0.5s;
+  
+  }
+  
+  .footerNav{
+	margin: 30px 0;
+  }
+  
+  .footerNav ul{
+	display: flex;
+	justify-content: center;
+	list-style-type:none ;
+  }
+  
+  .footerNav ul li a{
+	color: white;
+	margin: 20px;
+	text-decoration: none;
+	font-size: 1.3em;
+	opacity: 0.7;
+	transition: 0.5s;
+  }
+  
+  .footerNav ul li a:hover{
+	opacity: 1;
+  }
+  
+  .footer-button{
+	background-color: #000;
+	padding: 20px;
+	text-align:center ;
+  }
+  
+  .footer-button p{
+	color: white;
+  
+  }
+  
+  .desiginer{
+	opacity: 0.7;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	margin: 0px 5px;
+  
+  }
+  
+  @media (max-width:700px) {
+	.footerNav ul{
+	  flex-direction: column;
+	}
+	.footerNav ul li{
+	  width: 100%;
+	  text-align: center;
+	  margin: 10px;
+	}
+  }
+  
+  
+  
+  
+ 
+/* footer  */
+  
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin-top: 150px;
+            margin-bottom: 50px;
+
+
+        }
+
+        header {
+        
+            color: #151313;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .faq {
+            margin: 20px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .question::after {
+            content: "+";
+            float: right;
+        }
+
+        .active::after {
+            content: "-";
+        }
+
+        .question:hover {
+            text-decoration: underline;
+        }

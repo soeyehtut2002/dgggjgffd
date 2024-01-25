@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color:teal;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color:darkkhaki;
+}
+
+.management-panel {
+    margin-top: 20px;
+    
+}
+
+.management-panel ul {
+    list-style-type: none;
+    padding: 0;
+    
+   
+}
+
+.management-panel li {
+    margin-bottom: 10px;
+   
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: aquamarine;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color:aqua;
+}
+
+button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(209, 28, 125);
+}
+
+/* Style for the edit form */
+#editMemberForm {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+#editMemberForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#editMemberForm input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+
+
+#editMemberForm button[type="button"] {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+#editMemberForm button[type="button"]:hover {
+    background-color: #bbb;
+}
+
+
+#addMemberForm {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  #addMemberForm label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  #addMemberForm input[type="text"],
+  #addMemberForm input[type="email"] {
+    display: inline-block;
+    width: calc(100% - 120px);
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  #addMemberForm button {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .close-button {
+    background-color: #ff0000; /* Red color */
+    color: #fff; /* White text color */
+    border: none;
+  }
+  
+  .close-button:hover {
+    background-color: #cc0000; /* Darker red color on hover */
+  }
+
+  
+  #editMemberForm {
+    display: none;
+    max-width: 500px; /* Adjust the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+  }
+  
+  #editMemberForm label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #editMemberForm input[type="text"],
+  #editMemberForm input[type="email"] {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  #closeButton {
+    background-color: #e74c3c;
+  }
+  
+  #closeButton:hover {
+    background-color: #c0392b;
+  }
+  
